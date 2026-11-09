@@ -259,8 +259,7 @@ CREATE TABLE `sellers` (
 --
 
 INSERT INTO `sellers` (`id_seller`, `name_seller`, `email_seller`, `phone_seller`, `date_created_seller`, `date_updated_seller`) VALUES
-(1, 'bray', 'dead1902@gmail.com', '5565422173', '2025-07-31', '2025-08-05 23:35:29'),
-(2, 'Francisco', 'editor@ecommerce.com', '5555555555', '2025-07-31', '2025-09-03 17:37:18');
+;
 
 -- --------------------------------------------------------
 
@@ -415,7 +414,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `name_user`, `email_user`, `password_user`, `token_user`, `token_exp_user`, `method_user`, `verification_user`, `confirm_user`, `country_user`, `department_user`, `city_user`, `address_user`, `phone_user`, `date_created_user`, `date_updated_user`) VALUES
-(8, 'Toro Cortes', 'user@ecommerce.com', '$2a$07$azybxcags23425sdg23sdeanQZqjaf6Birm2NvcYTNtJw24CsO5uq', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTY5MjMyMDIsImV4cCI6MTc1NzAwOTYwMiwiZGF0YSI6eyJpZCI6OCwiZW1haWwiOiJ1c2VyQGVjb21tZXJjZS5jb20ifX0.QUH6u1VX-tcjBZZ9Khm5UTfmb8-3Gn0TuU7d1Lt7l3E', '1757009602', 'directo', 1, '1ryzi790qj3nh42osbcf', 'Mexico', 'Distrito Federal', 'Cdmx', 'nicolas fernandez 12', '52_5565422173', '2025-07-03', '2025-09-03 18:27:15');
+(8, 'Toro Cortes', 'user@ecommerce.com', '$2a$07$azybxcags23425sdg23sdeanQZqjaf6Birm2NvcYTNtJw24CsO5uq', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NTY5MjMyMDIsImV4cCI6MTc1NzAwOTYwMiwiZGF0YSI6eyJpZCI6OCwiZW1haWwiOiJ1c2VyQGVjb21tZXJjZS5jb20ifX0.QUH6u1VX-tcjBZZ9Khm5UTfmb8-3Gn0TuU7d1Lt7l3E', '1757009602', 'directo', 1, '1ryzi790qj3nh42osbcf', 'Mexico', 'Distrito Federal', 'Cdmx', 'nicolas hernandez 26', '52_5565429973', '2025-07-03', '2025-09-03 18:27:15');
 
 -- --------------------------------------------------------
 
