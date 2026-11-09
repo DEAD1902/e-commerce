@@ -1,0 +1,16 @@
+# Desactivar listado de directorios
+Options -Indexes
+Options -MultiViews
+
+# Activar mod_rewrite
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+
+
+# Control de caché
+<IfModule mod_headers.c>
+   Header set Cache-Control "max-age=0,no-store"
+</IfModule>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.5/phpunit.xsd"
+         bootstrap="tests/bootstrap.php"
+         colors="true"
+         verbose="true"
+         stopOnFailure="false"
+         failOnRisky="false"
+         failOnWarning="false">
+    <testsuites>
+        <testsuite name="PayPal Payment Suite">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage processUncoveredFiles="true">
+        <include>
+            <directory suffix=".php">src/Controller</directory>
+            <directory suffix=".php">src/Service</directory>
+        </include>
+        <report>
+            <text outputFile="php://stdout" showUncoveredFiles="true"/>
+            <html outputDirectory="docs/coverage"/>
+        </report>
+    </coverage>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="PAYPAL_CLIENT_ID" value="test_paypal_client_id_123"/>
+        <env name="PAYPAL_CLIENT_SECRET" value="test_paypal_client_secret_456"/>
+        <env name="PAYPAL_WEBHOOK_ID" value="test_webhook_id_789"/>
+    </php>
+</phpunit>
